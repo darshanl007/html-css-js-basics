@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- Form Tag
+    Used to create an HTML form for user input. -->
+    <form action="/submit" method="post">
+        <!-- Text Input Field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <!-- Email Input Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <!-- Password Input Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkbox -->
+        <label for="language">Langauage:</label>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="kannada" name="language" value="kannada">
+        <label for="kannada">Kannada</label>
+        <input type="checkbox" id="hindi" name="language" value="hindi">
+        <label for="hindi">Hindi</label><br><br>
+        <!-- Dropdown Menu -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="USA">USA</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
