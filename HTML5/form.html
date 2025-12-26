@@ -11,22 +11,43 @@
     <!-- Form Tag
     Used to create an HTML form for user input. -->
     <form action="/submit" method="post">
+        <h2>HTML5 Form Elements</h2>
         <!-- Text Input Field -->
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
+        <!-- Reg Number -->
+        <label for="reg">Register Number:</label><br>
+        <input type="number" id="reg" name="reg" placeholder="Enter your reg number"><br><br>
+
+        <!-- Date Input Field -->
+        <label for="dateOfBirth">Date of Birth:</label><br>
+        <input type="date" id="dateOfBirth" name="dateOfBirth"><br><br>
+
+        <!-- Time -->
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time"><br><br>
+
+        <!-- Date and Time local -->
+        <label for="meeting">Meeting Date and Time:</label><br>
+        <input type="datetime-local" id="meeting" name="meeting"><br><br>
+
         <!-- Email Input Field -->
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <!-- Phone Input Field -->
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
 
         <!-- Password Input Field -->
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
 
         <!-- Radio Buttons -->
-        <label>Gender:</label><br>
+        <label>Gender:</label>
         <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
+        <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label><br><br>
 
@@ -38,13 +59,39 @@
         <label for="kannada">Kannada</label>
         <input type="checkbox" id="hindi" name="language" value="hindi">
         <label for="hindi">Hindi</label><br><br>
+
         <!-- Dropdown Menu -->
         <label for="country">Country:</label>
         <select id="country" name="country">
             <option value="india">India</option>
             <option value="USA">USA</option>
             <option value="australia">Australia</option>
+            <option value="russia">Russia</option>
+            <option value="japan">Japan</option>
         </select><br><br>
+
+        <!-- File Upload -->
+        <label for="file">Upload File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- URL -->
+        <label for="website">Website:</label><br>
+        <input type="url" id="website" name="website" placeholder="Enter your website URL"><br><br>
+
+        <!-- Search -->
+        <label for="search">Search:</label><br>
+        <input type="search" id="search" name="search" placeholder="Search..."><br><br>
+
+        <!-- Color Picker-->
+        <label for="color">Choose a color:</label><br>
+        <input type="color" id="color" name="color" value="#ff0000"><br><br>
+
+        <!-- Range -->
+        <label for="range">Range:</label><br>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <!-- Button -->
+        <button type="button" onclick="alert('Button Clicked!')">Click Me!</button><br><br>
 
         <!-- Submit Button -->
         <input type="submit" value="Submit">
