@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - Topic</title>
+    <link rel="stylesheet" href="flex.css">
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-evenly; /* center, space-between, space-around, flex-start, flex-end */
+            align-items: center;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: coral;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flexbox (Flexible Box Layout) is a CSS layout model that provides an efficient way to align, space, 
+     and arrange elements in a container using a one-dimensional layout (row or column). -->
+    <h2>Understanding CSS Flexbox</h2>
+    <hr>
+    <div>
+        <!-- Flex Container -->
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+        </div>
+    </div>
+</body>
+</html>
