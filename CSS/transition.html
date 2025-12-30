@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 20vh;
+            width: 20vw;
+            position: relative;
+            margin: 20px;
+            background-color: lightblue;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 1s;
+        }
+
+        .box:hover {
+            height: 22vh;
+            width: 22vw;
+            background-color: lightgreen;
+        }
+
+        button {
+            padding: 12px 26px;
+            background-color: lightcoral;
+            position: relative;
+            left: 20px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            color: black;
+            background-color: coral;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Transitions</h2>
+    <div class="box">
+
+    </div>
+
+    <button>Click Me!</button>
+</body>
+
+</html>
