@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/photos/suburb-asphalt-road-and-sun-flowers-picture-id603164912?k=20&m=603164912&s=612x612&w=0&h=sqC4YBndocjUjcTFqEWnkmg6mf66g1e2n9u5O50WPAE=);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sun {
+    height: 20vh;
+    width: 12vw;
+    background-size: 12vw 20vh;
+    background-image: url('Sun_Wallpaper.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.bike {
+    height: 30vh;
+    width: 20vw;
+    background-size: 20vw 30vh;
+    background-image: url('bmw.png');
+    animation: bike 3s linear infinite;
+    /* animation: animation-name duration timing-dunction delay */
+    position: absolute;
+    left: 0px;
+    top: 340px;
+}
+
+@keyframes bike {
+    0% {
+        position: absolute;
+        top: 340px;
+        left: 0px;
+    }
+
+    100% {
+        position: absolute;
+        top: 340px;
+        left: 100%;
+    }
+}
+
+.cycle {
+    height: 22vh;
+    width: 15vw;
+    background-size: 15vw 22vh;
+    background-image: url('cycle.png');
+    background-repeat: no-repeat;
+    animation: cycle 3s linear infinite;
+    position: absolute;
+    left: 40px;
+    top: 500px;
+}
+
+@keyframes cycle {
+    0% {
+        position: absolute;
+        top: 500px;
+        left: 40px;
+    }
+
+    100% {
+        position: absolute;
+        top: 500px;
+        left: 100%;
+    }
+
+}
