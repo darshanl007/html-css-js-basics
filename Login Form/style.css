@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,26 +6,26 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(135deg,lightblue,lightgreen);
+    background: linear-gradient(135deg, lightblue, lightgreen);
     display: flex;
     justify-content: space-around;
     align-items: center;
-}  
+}
 
-.login-container{
+.login-container {
     width: 320px;
     background: #f3f1f1;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.login-container h2{
+.login-container h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.input-group{
+.input-group {
     margin-bottom: 15px;
 }
 
@@ -35,7 +35,7 @@ body {
     font-size: 15px;
 }
 
-.input-group input{
+.input-group input {
     width: 93%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -43,14 +43,14 @@ body {
     outline: none;
 }
 
-.input-group input:focus{
+.input-group input:focus {
     border-color: skyblue;
 }
 
-button{
+button {
     width: 100%;
     padding: 10px;
-    background: linear-gradient(135deg,lightblue,lightgreen);
+    background: linear-gradient(135deg, lightblue, lightgreen);
     color: white;
     border: none;
     border-radius: 8px;
@@ -58,17 +58,52 @@ button{
     cursor: pointer;
 }
 
-button:hover{
-    background: linear-gradient(135deg,rgb(81, 203, 209),rgb(149, 232, 149));
+button:hover {
+    background: linear-gradient(135deg, rgb(81, 203, 209), rgb(149, 232, 149));
 }
 
-.signup-text{
+.signup-text {
     font-size: 14px;
     text-align: center;
-    margin: 15px;   
-} 
+    margin: 15px;
+}
 
 .signup-text a {
     text-decoration: none;
     color: #667eea;
+}
+
+.or-text {
+    text-align: center;
+    margin: 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.social-login a {
+    margin: 5px;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.google {
+    background-color: rgb(74, 169, 201);
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.github {
+    background-color: rgb(103, 212, 133);
 }
