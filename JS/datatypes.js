@@ -35,3 +35,36 @@ let z = Symbol("Hello World!");
 console.log(z);
 console.log(typeof(z));
 
+console.log("---------------------------");
+
+//Non Primitive Datatypes : Object -> Array , Function
+
+//Object
+const student = {
+    name : "Darshan",
+    age : 23,
+    cgpa : 8.23,
+    isPass : true
+};
+
+console.log(student);
+console.log(typeof(student));
+
+console.log(student.name);
+console.log(student["age"]);
+console.log(student["cgpa"]);
+console.log(student.isPass);    
+
+student["age"] = student["age"] + 2;
+console.log(student.age);
+
+student["name"] = "Darshan Lokesh";
+console.log(student.name);
+
+console.log(typeof student["isPass"]);
+console.log(typeof student["name"]);
+
+
+
+
+
