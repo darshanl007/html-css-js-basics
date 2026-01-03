@@ -25,3 +25,17 @@ if (marks >= 85) {
 } else {
     console.log("Fail");
 }
+
+//Nested if
+let username = "admin";
+let password = "1234";
+
+if(username == "admin"){
+    if(password == "admin@123"){
+        console.log("Login Successful");
+    } else {
+        console.log("Wrong Password");
+    }
+} else {
+    console.log("Invalid User");
+}
