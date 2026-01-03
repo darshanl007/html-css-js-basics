@@ -30,12 +30,34 @@ if (marks >= 85) {
 let username = "admin";
 let password = "1234";
 
-if(username == "admin"){
-    if(password == "admin@123"){
+if (username == "admin") {
+    if (password == "admin@123") {
         console.log("Login Successful");
     } else {
         console.log("Wrong Password");
     }
 } else {
     console.log("Invalid User");
+}
+
+//Switch case
+let a = 10;
+let b = 5;
+let operator = "*";
+
+switch (operator) {
+    case "+":
+        console.log(a + b);
+        break;
+    case "-":
+        console.log(a - b);
+        break;
+    case "*":
+        console.log(a * b);
+        break;
+    case "/":
+        console.log(a / b);
+        break;
+    default:
+        console.log("Invalid operator");
 }
