@@ -61,3 +61,7 @@ switch (operator) {
     default:
         console.log("Invalid operator");
 }
+
+//6. Ternary Operator
+let isLoggedIn = true;
+console.log(isLoggedIn ? "Welcome Back!" : "Please Login");
