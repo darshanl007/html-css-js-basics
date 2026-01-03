@@ -14,7 +14,7 @@ if (number % 2 == 0) {
     console.log(number, " is Odd");
 }
 
-//3. if..else if..else
+//3. if..else if..else (else if)
 let marks = 87;
 if (marks >= 85) {
     console.log("Distinction");
@@ -26,7 +26,7 @@ if (marks >= 85) {
     console.log("Fail");
 }
 
-//Nested if
+//4. Nested if
 let username = "admin";
 let password = "1234";
 
@@ -40,7 +40,7 @@ if (username == "admin") {
     console.log("Invalid User");
 }
 
-//Switch case
+//5. Switch case
 let a = 10;
 let b = 5;
 let operator = "*";
