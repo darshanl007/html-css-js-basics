@@ -1,4 +1,5 @@
 //Conditional Statements
+
 //1. if
 let age = 18;
 if (age >= 18) {
@@ -6,7 +7,6 @@ if (age >= 18) {
 }
 
 //2. if..else
-
 let number = 4;
 if (number % 2 == 0) {
     console.log(number, " is Even");
