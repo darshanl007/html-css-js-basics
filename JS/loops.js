@@ -40,7 +40,7 @@ console.log("--- while loop ends ---");
 //3. do-while loop
 let x = 10;
 do {
-    console.log("x = ",x);
+    console.log("x = ", x);
     x++;
 } while (i <= 5);
 
@@ -51,3 +51,34 @@ do {
 } while (y <= 10);
 
 console.log("--- do-while loop ends ---");
+
+//4. for-of loop
+let str = "Javascript";
+
+let size = 0;
+for (let i of str) { // iterator -> characters
+    console.log("i = ", i);
+    size++;
+}
+console.log("String size is =", size);
+
+let fruits = ["Apple", "Banana", "Mango", "Grapes"];
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+
+console.log("--- for-of loop ends ---");
+
+//5. for-in loop
+let student = {
+    Sname: "Darshan",
+    age: 23,
+    cgpa: 8.23,
+    isPass: true
+};
+
+for(let key in student){
+    console.log(key +" : "+ student[key]);
+}
+
+console.log("--- for-in loop ends---");
