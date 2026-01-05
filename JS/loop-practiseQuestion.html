@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Practise Question</title>
+</head>
+
+<body>
+
+    <script>
+        // print all even number from 0 to 100
+        console.log("Even Numbers from 0 to 100");
+        for (let i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                console.log(i);
+            }
+        }
+
+        /* Create a game where you start with random game number.Ask user to keep guessing the number
+        until the user enters the correct value */
+
+        let gameNumber = 25;
+        let userNumber = prompt("Guess the game number:");
+
+        while(userNumber != gameNumber){
+            userNumber = prompt("You entered wrong number, Guess again:");
+        }
+        console.log("Congratulations, you entered the right number");
+    </script>
+</body>
+
+</html>
