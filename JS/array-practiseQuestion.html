@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Practice Questions</title>
+</head>
+
+<body>
+
+    <script>
+        // --------------------------------------------------
+        // 1. Find average marks of the entire class
+        // --------------------------------------------------
+
+        let marks = [85, 97, 44, 37, 76, 60];
+        let sum = 0;
+
+        for (let mark of marks) {
+            sum += mark;
+        }
+
+        let average = sum / marks.length;
+        console.log("Total Marks:", sum);
+        console.log(`Average marks of entire class is ${average}`);
+
+        console.log("----------------------------");
+
+        // --------------------------------------------------
+        // 2. Apply 10% discount on item prices
+        // --------------------------------------------------
+
+        let items = [250, 645, 300, 900, 50];
+
+        // Display original prices
+        let index = 0;
+        for (let price of items) {
+            console.log(`Original price at index ${index} = ${price}`);
+            index++;
+        }
+
+        console.log("Prices after 10% discount:");
+
+        // Apply discount
+        for (let price of items) {
+            let discountedPrice = price - (price * 0.10);
+            console.log(discountedPrice);
+        }
+
+        console.log("----------------------------");
+
+        // --------------------------------------------------
+        // 3. Array string methods
+        // --------------------------------------------------
+
+        let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+        console.log("Original Array:", companies);
+
+        // Remove the first company
+        let removedCompany = companies.shift();
+        console.log("Removed:", removedCompany);
+        console.log("After removing first company:", companies);
+
+        // Remove Uber and add OLA
+        companies.splice(2, 1, "OLA");
+        console.log("After replacing Uber with OLA:", companies);
+
+        // Add Amazon at the end
+        companies.push("Amazon");
+        console.log("After adding Amazon:", companies);
+
+    </script>
+
+</body>
+</html>
