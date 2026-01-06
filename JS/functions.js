@@ -1,0 +1,65 @@
+// Simple function
+function myFunction() {
+    console.log("Welcome to JavaScript World!");
+    console.log("I am learning Functions in JS...");
+}
+myFunction();
+myFunction();
+
+console.log("--------------------------");
+
+// Function with parameter
+function myFunction1(msg) { // parameter -> input
+    console.log(msg);
+}
+myFunction1("Hello Good Evening"); // argument
+myFunction1("I Love JavaScript");
+
+console.log("---------------------------");
+
+// Function with multiple parameters
+function myFunction2(msg, num) {
+    console.log(msg, num);
+}
+myFunction2("Hello", 12);
+
+// Function with parameters (no return)
+function addition(a, b) {
+    console.log(a + b);
+}
+addition(10, 20);
+
+console.log(`----------------------------`);
+
+// Function with return value
+function sum(x, y) {
+    let s = x + y;   // declared variable properly
+    return s;
+}
+let val = sum(5, 8);
+console.log(val);
+
+console.log(`----------------------------`);
+
+// Function Expression
+const square = function (n) {
+    return n * n;
+};
+console.log(square(6));
+
+console.log(`----------------------------`);
+// Arrow Function (single line)
+const printHello = () => console.log("Hello");
+printHello();
+
+// Arrow Function with return
+const arrowSum = (a, b) => {
+    return a + b;
+};
+console.log(arrowSum(2, 3));
+
+// Arrow Function without return (just print)
+const arrowMul = (x, y) => {
+    console.log(x * y);
+};
+arrowMul(4, 5);
