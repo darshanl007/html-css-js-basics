@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Practise Question 1</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Create a function using the "function" that takes a string as an argument & return the number of vowels in the string.
+        function vowelsCount(str) {
+            let count = 0;
+            for (let char of str) {
+                if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log(vowelsCount("aeiou")); // 5
+        console.log(vowelsCount("abcde")); // 2
+
+        console.log("--------------------------------");
+
+        // Create a arrow function to perform the same task
+
+        const countVowels = (str) => {
+            let count = 0;
+            for (let char of str) {
+                if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+                    count++;
+                }
+            }
+            return count;
+        };
+
+        console.log(countVowels("javascript")); // 3
+
+    </script>
+</body>
+
+</html>
