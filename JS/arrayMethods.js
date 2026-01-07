@@ -35,3 +35,20 @@ let users = [
 let userNames = users.map(user => user.userName);
 console.log(userNames);
 
+console.log("-------------------------------");
+
+// filter() - get even numbers
+let array = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let evenArray = array.filter((num) => {
+    return num % 2 == 0;
+});
+console.log(evenArray);
+
+// Filter marks above 85
+let marks = [88, 83, 70, 90, 75, 99, 85, 93];
+
+let topStudents = marks.filter(mark => mark > 85);
+console.log(topStudents);
+
+
