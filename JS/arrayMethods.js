@@ -51,4 +51,24 @@ let marks = [88, 83, 70, 90, 75, 99, 85, 93];
 let topStudents = marks.filter(mark => mark > 85);
 console.log(topStudents);
 
+console.log("--------------------------------");
+
+// reduce() - sum of numbers in array
+let arr1 = [1, 2, 3, 4, 5];
+
+const sum = arr1.reduce((total, curr) => {
+    return total + curr;
+});
+console.log(sum);
+
+console.log("---------------------------------");
+
+// Find maximum number
+let arr2 = [85, 88, 90, 93, 79, 56, 40];
+
+let max = arr2.reduce((acc, curr) => {
+    return acc > curr ? acc : curr;
+});
+console.log(max);
+
 
