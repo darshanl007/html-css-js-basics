@@ -105,3 +105,34 @@ let str = ["bangalore", "pune", "chennai", "hyderabad"];
 str.forEach((val, idx, array) => {
     console.log(val.toUpperCase(), idx, array);
 });
+
+console.log("----------------------------------");
+
+// Normal function (Callback Function)
+function greet(name) {
+    return "Hello " + name;
+}
+
+// Higher Order Function
+// It accepts another function as a parameter
+function welcome(callback) {
+    console.log(callback("Darshan"));
+}
+
+// Passing function as an argument
+welcome(greet);
+
+console.log("-----------------------------------");
+
+// Normal function (Callback Function)
+function greetMessage(message) {
+    return "Darshan " + message;
+}
+
+// Higher Order Function
+function thankYou(callback) {
+    console.log(callback("Good Bye"));
+}
+
+// Passing function as an argument
+thankYou(greetMessage);
