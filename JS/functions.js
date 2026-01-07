@@ -137,8 +137,6 @@ function thankYou(callback) {
 // Passing function as an argument
 thankYou(greetMessage);
 
-console.log("----------------------------");
-
 // Anonymous Function with setTimeout()
 
 setTimeout(function() {
@@ -151,3 +149,10 @@ setInterval(() => {
     console.log("Runs after every 4 seconds");
 }, 4000);
 
+console.log("------------------------------");
+
+// Immediately Invoked Function Expression (IIFE)
+
+(function () {
+    console.log("IIFE executed immediately");
+})();
