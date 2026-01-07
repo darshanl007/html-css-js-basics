@@ -39,11 +39,12 @@
             return count;
         };
 
+        console.log(countVowels("javascript"));
+
+
         console.log("--------------------------------");
 
         // Create a function to perform the number of cosonants in the string.
-
-        console.log(countVowels("javascript")); // 
 
         function consonantCount(str) {
             let count = 0;
@@ -56,6 +57,20 @@
         }
 
         console.log(consonantCount("javascript"));
+
+        console.log("--------------------------------");
+
+        // Reverse a String program using arrow function.
+
+        const reverseString = (str) => {
+            let rev = "";
+            for (let i = str.length - 1; i >= 0; i--) {
+                rev += str.charAt(i);
+            }
+            console.log(rev);
+        }
+
+        reverseString("java");
 
     </script>
 </body>
