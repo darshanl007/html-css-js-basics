@@ -63,3 +63,45 @@ const arrowMul = (x, y) => {
     console.log(x * y);
 };
 arrowMul(4, 5);
+
+console.log("-----------------------------");
+
+// -------- Call Back Function using forEach ------------
+
+// Array of numbers
+let arr = [1, 2, 3, 4, 5];
+
+// -------------------------------
+// Example 1: Print only values
+// -------------------------------
+// printVal is a callback function
+// forEach() is a higher order method
+
+arr.forEach(function printVal(val) {
+    console.log(val); 
+});
+
+// -------------------------------
+// Example 2: Print value with index
+// -------------------------------
+// Arrow function as callback
+// val -> current element
+// idx -> index of element
+
+arr.forEach((val, idx) => {
+    console.log(`${val} -> ${idx}`);
+});
+
+console.log("------------------------------");
+
+// -------------------------------
+// Example 3: String array operations
+// -------------------------------
+// Convert each string to uppercase
+// Also print index and full array
+
+let str = ["bangalore", "pune", "chennai", "hyderabad"];
+
+str.forEach((val, idx, array) => {
+    console.log(val.toUpperCase(), idx, array);
+});
