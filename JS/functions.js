@@ -136,3 +136,18 @@ function thankYou(callback) {
 
 // Passing function as an argument
 thankYou(greetMessage);
+
+console.log("----------------------------");
+
+// Anonymous Function with setTimeout()
+
+setTimeout(function() {
+    console.log("This line executes after 3 seconds");
+}, 3000);
+
+// Anonymous Function with setInterval()
+
+setInterval(() => {
+    console.log("Runs after every 4 seconds");
+}, 4000);
+
