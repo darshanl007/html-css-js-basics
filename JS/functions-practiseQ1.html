@@ -39,7 +39,23 @@
             return count;
         };
 
-        console.log(countVowels("javascript")); // 3
+        console.log("--------------------------------");
+
+        // Create a function to perform the number of cosonants in the string.
+
+        console.log(countVowels("javascript")); // 
+
+        function consonantCount(str) {
+            let count = 0;
+            for (let val of str) {
+                if (val !== "a" && val !== "e" && val !== "i" && val !== "o" && val !== "u") {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log(consonantCount("javascript"));
 
     </script>
 </body>
