@@ -20,3 +20,25 @@ console.log("-------------------------");
 container.style.backgroundColor = "lightgreen";
 container.style.borderRadius = "8px";
 container.style.fontSize = "18px";
+
+// Form properties
+input.value = "Darshan";
+checkbox.checked = true;
+button.disabled = false;
+
+// Node traversal properties
+console.log(container.parentElement);      // body
+console.log(container.children);           // all child elements
+console.log(container.firstElementChild);  // first child
+console.log(container.lastElementChild);   // last child
+
+console.log("---------------------------");
+
+// Size properties
+console.log(container.offsetWidth);
+console.log(container.offsetHeight);
+
+// Event property
+button.onclick = function () {
+    alert("Hello " + input.value);
+};
