@@ -15,3 +15,8 @@ console.log(container.tagName);
 console.log(para.tagName);
 
 console.log("-------------------------");
+
+// Style properties
+container.style.backgroundColor = "lightgreen";
+container.style.borderRadius = "8px";
+container.style.fontSize = "18px";
