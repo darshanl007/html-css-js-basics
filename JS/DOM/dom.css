@@ -1,0 +1,22 @@
+body {
+    background-color: aqua;
+}
+
+#myId {
+    color: blue;
+    background-color: yellow;
+}
+
+.myClass {
+    background-color: yellow;
+    color: red;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    color: white;
+    background-color: blue;
+}
