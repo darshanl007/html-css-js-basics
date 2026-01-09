@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+
+    <style>
+        /* Common styling for all div boxes */
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 5px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Create a H2 heading element with text "Hello" Append "Good Morning, I am Darshan L" using JavaScript -->
+    <h2 id="head">Hello</h2>
+
+    <!-- Create 3 divs with the same class name "box"Access them using JavaScript and assign unique text -->
+    <div class="box">First div</div>
+    <div class="box">Second div</div>
+    <div class="box">Third div</div>
+
+    <script>
+        // Access the h2 element using ID
+        const head = document.getElementById("head");
+
+        // Append text to existing content
+        head.textContent += " Good Morning, I am Darshan L";
+
+        console.log(head);
+
+        console.log("----------------------------");
+
+        // Select all div elements with class "box"
+        const divs = document.querySelectorAll(".box");
+
+        for (const div of divs) {
+            console.log(div);
+        }
+
+        // Assign unique text to each div
+        divs[0].textContent = "New Unique Value of Div 1";
+        divs[1].textContent = "New Unique Value of Div 2";
+        divs[2].textContent = "New Unique Value of Div 3";
+    </script>
+
+</body>
+
+</html>
