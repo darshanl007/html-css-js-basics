@@ -30,6 +30,8 @@
     <div class="box">Second div</div>
     <div class="box">Third div</div>
 
+    <!-- Create a new button element. Give it a text "click me!", background color of red and text color of white -->
+    <!-- Insert the button as the first element inside the body tag -->
     <script>
         // Access the h2 element using ID
         const head = document.getElementById("head");
@@ -52,6 +54,21 @@
         divs[0].textContent = "New Unique Value of Div 1";
         divs[1].textContent = "New Unique Value of Div 2";
         divs[2].textContent = "New Unique Value of Div 3";
+
+        console.log("-----------------------------");
+
+        // Create a new <button> element dynamically
+        let newBtn = document.createElement("button");
+
+        // Set the text content of the button
+        newBtn.innerText = "click me!";
+
+        // Style
+        newBtn.style.color = "white";
+        newBtn.style.backgroundColor = "red";
+
+        // Insert the button as the first element inside the <body> tag
+        document.querySelector("body").prepend(newBtn);
     </script>
 
 </body>
