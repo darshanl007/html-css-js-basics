@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.box1 {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid #0077cc;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.box2 {
+    width: 200px;
+    height: 100px;
+    background-color: lightcoral;
+    border: 2px solid #cc0000;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.box1:hover,
+.box2:hover {
+    opacity: 0.85;
+}
