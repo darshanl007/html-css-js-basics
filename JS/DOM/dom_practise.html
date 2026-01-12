@@ -17,6 +17,14 @@
             text-align: center;
             background-color: lightgreen;
         }
+
+        .content {
+            color: red;
+        }
+
+        .newClass {
+            background-color: yellow;
+        }
     </style>
 </head>
 
@@ -32,6 +40,10 @@
 
     <!-- Create a new button element. Give it a text "click me!", background color of red and text color of white -->
     <!-- Insert the button as the first element inside the body tag -->
+
+    <!-- Create a <p> tag in html, give it as class and style something -->
+    <!-- Now Create a new class in CSS and try to append this class to the <p> element -->
+    <p class="content">My name is Darshan L.</p>
     <script>
         // Access the h2 element using ID
         const head = document.getElementById("head");
@@ -69,6 +81,18 @@
 
         // Insert the button as the first element inside the <body> tag
         document.querySelector("body").prepend(newBtn);
+
+        console.log("------------------------------");
+
+        // Select the first <p> (paragraph) element from the document
+        let para = document.querySelector("p");
+        console.log(para.getAttribute("class"));
+
+        // Add a new CSS class named "newClass" to the paragraph element
+        // (This does NOT remove existing classes)
+        para.classList.add("newClass");
+        console.log(para);
+        console.log(para.getAttribute("class"));
     </script>
 
 </body>
