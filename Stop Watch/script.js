@@ -10,20 +10,20 @@ function updateDisplay() {
     display.innerText = `${pad(minutes)} : ${pad(seconds)} : ${pad(milliseconds)}`;
 }
 
-function pad(num){
+function pad(num) {
     return num < 10 ? "0" + num : num;
 }
 
 // Update time values
-function updateTime(){
+function updateTime() {
     milliseconds++;
 
-    if(milliseconds === 100){
+    if (milliseconds === 100) {
         milliseconds = 0;
         seconds++;
-    } 
+    }
 
-    if(seconds === 60){
+    if (seconds === 60) {
         seconds = 0;
         minutes++;
     }
@@ -32,15 +32,15 @@ function updateTime(){
 }
 
 // Start
-function start(){
-    if(!isRunning){
+function start() {
+    if (!isRunning) {
         isRunning = true;
-        timer = setInterval(updateTime,10);
+        timer = setInterval(updateTime, 10);
     }
 }
 
 // Stop 
-function stop(){
+function stop() {
     clearInterval(timer);
     isRunning = false;
 }
@@ -52,13 +52,3 @@ function reset() {
     minutes = seconds = milliseconds = 0;
     updateDisplay();
 }
-
-// DOM Selection
-const startBtn = document.querySelector(".start");
-const stopBtn = document.querySelector(".stop");
-const resetBtn = document.querySelector(".reset");
-
-// Add event listeners
-startBtn.addEventListener("click", start);
-stopBtn.addEventListener("click", stop);
-resetBtn.addEventListener("click", reset);
