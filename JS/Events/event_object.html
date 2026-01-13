@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Object in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 16px;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            margin: 10px 0;
+            display: block;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 18px;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Event Object in JavaScript</h2>
+
+    <!-- Inline click event -->
+    <button onclick="showEvent(event)">Click Me</button>
+
+    <!-- Mouse event button -->
+    <button id="btn">Click For Mouse Event</button>
+
+    <!-- Keyboard event input -->
+    <input type="text" id="input" placeholder="Type something...">
+
+    <!-- preventDefault example -->
+    <a href="https://google.com" onclick="stopLink(event)">Google</a>
+
+    <script src="event_object.js"></script>
+
+</body>
+
+</html>
