@@ -16,6 +16,12 @@ btn1.addEventListener("click", () => {
     console.log("Button Handler 2");
 });
 
+// Adding handler 3 to btn1 event
+const handler3 = () =>{
+    console.log("Button was clicked - handler 3");
+}
+btn1.addEventListener("click", handler3);
+
 // Selecting Button 2
 let btn2 = document.querySelector("#btn2");
 
@@ -39,3 +45,6 @@ let div2 = document.querySelector("#div2");
 div2.addEventListener("mouseout", () => {
     alert("Mouse left the box...");
 });
+
+// Remove event
+btn1.removeEventListener("click", handler3);
